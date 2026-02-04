@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: digger run
-        uses: diggerhq/digger@gcp-test
+        uses: diggerhq/digger@latest
         with:
           setup-google-cloud: true
           google-auth-credentials: '${{ secrets.GCP_CREDENTIALS }}'

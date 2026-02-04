@@ -16,6 +16,7 @@ jobs:
       - name: digger run
         uses: diggerhq/digger@latest
         with:
+          no-backend: true
           setup-google-cloud: true
           google-auth-credentials: '${{ secrets.GCP_CREDENTIALS }}'
         env:

@@ -28,7 +28,6 @@ jobs:
         uses: diggerhq/digger@v0.6.142
         with:
           no-backend: true
-          google-lock-bucket: digger-lock
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

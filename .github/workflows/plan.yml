@@ -28,7 +28,7 @@ jobs:
         uses: diggerhq/digger@vLatest
         with:
           no-backend: true
-          setup-google-gloud: true
+          setup-google-cloud: true
           google-auth-credentials: ${{ secrets.GCP_CREDENTIALS }}
           google-lock-bucket: digger-lock
         env:

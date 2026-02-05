@@ -28,8 +28,9 @@ jobs:
         uses: diggerhq/digger@vLatest
         with:
           no-backend: true
-          disable-locking: true
-          setup-terraform: true
+          setup-google-gloud: true
+          google-auth-credentials: ${{ secrets.GCP_CREDENTIALS }}
+          google-lock-bucket: digger-lock
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

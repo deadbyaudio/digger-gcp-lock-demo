@@ -28,6 +28,7 @@ jobs:
         uses: diggerhq/digger@v0.6.142
         with:
           no-backend: true
+          disable-locking: true
           setup-terraform: true
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
